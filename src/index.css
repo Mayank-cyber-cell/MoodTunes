@@ -1,0 +1,361 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MoodTunes Design System - Beautiful color palette and gradients */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* Core background and text colors */
+    --background: 245 245% 98%;
+    --foreground: 230 25% 12%;
+
+    /* Card and surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 230 25% 12%;
+
+    /* Popover styling */
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 25% 12%;
+
+    /* Primary brand colors - Rich purple theme */
+    --primary: 270 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 270 85% 55%;
+    --primary-light: 270 85% 75%;
+
+    /* Secondary colors */
+    --secondary: 270 25% 95%;
+    --secondary-foreground: 270 85% 25%;
+
+    /* Muted colors */
+    --muted: 270 20% 96%;
+    --muted-foreground: 230 15% 45%;
+
+    /* Accent colors */
+    --accent: 285 85% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status colors */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 145 70% 45%;
+    --warning: 35 90% 55%;
+
+    /* Border and input styling */
+    --border: 270 20% 90%;
+    --input: 270 20% 92%;
+    --ring: 270 85% 65%;
+
+    /* Mood-specific colors */
+    --mood-happy: 50 100% 65%;
+    --mood-sad: 210 75% 65%;
+    --mood-romantic: 340 75% 65%;
+    --mood-energetic: 15 85% 60%;
+    --mood-chill: 160 60% 65%;
+    --mood-angry: 0 75% 55%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(270 85% 65%), hsl(285 85% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(270 85% 65%) 0%, hsl(285 85% 70%) 50%, hsl(300 85% 75%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(270 20% 98%) 100%);
+    --gradient-mood: linear-gradient(135deg, hsl(270 85% 65%) 0%, hsl(285 85% 70%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(270 85% 65% / 0.1);
+    --shadow-medium: 0 8px 30px hsl(270 85% 65% / 0.15);
+    --shadow-strong: 0 15px 40px hsl(270 85% 65% / 0.2);
+    --shadow-glow: 0 0 30px hsl(270 85% 65% / 0.3);
+
+    /* Spacing and sizing */
+    --radius: 1rem;
+    --radius-large: 1.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode core colors */
+    --background: 230 25% 8%;
+    --foreground: 0 0% 95%;
+
+    /* Dark mode surfaces */
+    --card: 230 25% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 230 25% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Dark mode primary colors */
+    --primary: 270 85% 70%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 270 85% 60%;
+    --primary-light: 270 85% 80%;
+
+    /* Dark mode secondary */
+    --secondary: 230 25% 15%;
+    --secondary-foreground: 0 0% 90%;
+
+    /* Dark mode muted */
+    --muted: 230 25% 12%;
+    --muted-foreground: 0 0% 65%;
+
+    /* Dark mode accent */
+    --accent: 285 85% 75%;
+    --accent-foreground: 230 25% 8%;
+
+    /* Dark mode status colors */
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Dark mode borders and inputs */
+    --border: 230 25% 20%;
+    --input: 230 25% 15%;
+    --ring: 270 85% 70%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(270 85% 70%), hsl(285 85% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(270 85% 70%) 0%, hsl(285 85% 75%) 50%, hsl(300 85% 80%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(230 25% 10%) 0%, hsl(230 25% 12%) 100%);
+    
+    /* Dark mode shadows */
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.3);
+    --shadow-medium: 0 8px 30px hsl(0 0% 0% / 0.4);
+    --shadow-strong: 0 15px 40px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 30px hsl(270 85% 70% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  /* Custom animations and utilities */
+  .mood-button {
+    @apply transition-all duration-300 ease-out hover:scale-110 hover:shadow-lg;
+  }
+
+  .mood-button.active {
+    @apply scale-110;
+    box-shadow: var(--shadow-glow);
+  }
+
+  .gradient-text {
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-bg {
+    background: var(--gradient-hero);
+  }
+
+  .glass-effect {
+    backdrop-filter: blur(20px);
+    background: hsl(var(--card) / 0.8);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Mood Theme Classes */
+  .theme-happy {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF6347 100%) !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    color: #2D1B69 !important;
+  }
+
+  .theme-happy * {
+    color: inherit !important;
+  }
+
+  .theme-happy .glass-effect,
+  .theme-happy .card {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(255, 215, 0, 0.3) !important;
+  }
+
+  .theme-sad {
+    background: linear-gradient(135deg, #4A90E2 0%, #7B68EE 50%, #B0C4DE 100%) !important;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 400 !important;
+    color: #F0F8FF !important;
+  }
+
+  .theme-sad * {
+    color: inherit !important;
+  }
+
+  .theme-sad .glass-effect,
+  .theme-sad .card {
+    background: rgba(176, 196, 222, 0.2) !important;
+    border: 1px solid rgba(74, 144, 226, 0.3) !important;
+  }
+
+  .theme-romantic {
+    background: linear-gradient(135deg, #FF69B4 0%, #FF1493 50%, #DC143C 100%) !important;
+    font-family: 'Dancing Script', cursive !important;
+    font-weight: 500 !important;
+    color: #FFFFFF !important;
+  }
+
+  .theme-romantic * {
+    color: inherit !important;
+  }
+
+  .theme-romantic .glass-effect,
+  .theme-romantic .card {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 105, 180, 0.4) !important;
+  }
+
+  .theme-energetic {
+    background: linear-gradient(135deg, #00FF00 0%, #32CD32 30%, #ADFF2F 60%, #00CED1 100%) !important;
+    font-family: 'Orbitron', monospace !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    text-shadow: 0 0 10px #00FF00 !important;
+  }
+
+  .theme-energetic * {
+    color: inherit !important;
+    text-shadow: inherit !important;
+  }
+
+  .theme-energetic .glass-effect,
+  .theme-energetic .card {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(0, 255, 0, 0.5) !important;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3) !important;
+  }
+
+  /* Mood-specific button styles */
+  .mood-happy {
+    @apply bg-gradient-to-br from-yellow-400 to-orange-500 text-white;
+    box-shadow: 0 4px 20px hsl(var(--mood-happy) / 0.3);
+  }
+
+  .mood-sad {
+    @apply bg-gradient-to-br from-blue-500 to-blue-700 text-white;
+    box-shadow: 0 4px 20px hsl(var(--mood-sad) / 0.3);
+  }
+
+  .mood-romantic {
+    @apply bg-gradient-to-br from-pink-500 to-rose-600 text-white;
+    box-shadow: 0 4px 20px hsl(var(--mood-romantic) / 0.3);
+  }
+
+  .mood-energetic {
+    @apply bg-gradient-to-br from-red-500 to-orange-600 text-white;
+    box-shadow: 0 4px 20px hsl(var(--mood-energetic) / 0.3);
+  }
+
+  .mood-chill {
+    @apply bg-gradient-to-br from-green-400 to-teal-500 text-white;
+    box-shadow: 0 4px 20px hsl(var(--mood-chill) / 0.3);
+  }
+
+  .mood-angry {
+    @apply bg-gradient-to-br from-red-600 to-red-800 text-white;
+    box-shadow: 0 4px 20px hsl(var(--mood-angry) / 0.3);
+  }
+
+  /* Animation keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: var(--shadow-soft);
+    }
+    50% {
+      box-shadow: var(--shadow-glow);
+    }
+  }
+
+  @keyframes neon-pulse {
+    0%, 100% {
+      text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+    }
+    50% {
+      text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+    }
+  }
+
+  /* Animation utilities */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-fade-in-scale {
+    animation: fadeInScale 0.5s ease-out;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .theme-energetic .animate-neon-pulse {
+    animation: neon-pulse 2s ease-in-out infinite;
+  }
+}
