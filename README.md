@@ -98,7 +98,7 @@ Frontend Developer | UI/UX Enthusiast | Cricket & Code Lover
 * Shareable mood + playlist cards
 * Add background animations specific to moods
 
----
+----
 
 ## 📄 License
 
