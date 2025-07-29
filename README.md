@@ -2,7 +2,7 @@
 
 
 
-MoodTunes is a beautifully designed web application that recommends music playlists based on your current mood. It transforms the entire theme of the website—colors, background, and typography—to match your emotional vibe. Just select how you're feeling, and MoodTunes does the rest.
+MoodTunes is a beautifully designed web application that recommends music playlists based on your current mood. It transforms the entire theme of the website—colors, background, and typography—to match your emotional vibe. Just select how you're feeling, and MoodTunes does the rest
 
 ---
 
